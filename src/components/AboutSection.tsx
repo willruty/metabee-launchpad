@@ -88,27 +88,6 @@ const AboutSection = () => {
             ))}
           </div>
         </div>
-
-        {/* Team Section */}
-          <div className="mt-24 text-center">
-            <h3 className="text-2xl md:text-3xl font-bold mb-8">
-              Nossa <span className="text-primary">Equipe</span>
-            </h3>
-            <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
-              Profissionais experientes de grandes empresas como Google, Microsoft, 
-              Amazon e startups unicórnio, unidos pela paixão de ensinar e transformar vidas 
-              através da nossa plataforma online e da MetaStation desktop.
-            </p>
-          
-          {/* Team certifications */}
-          <div className="flex flex-wrap justify-center gap-8 opacity-60">
-            <div className="text-2xl font-bold">Google</div>
-            <div className="text-2xl font-bold">Microsoft</div>
-            <div className="text-2xl font-bold">Meta</div>
-            <div className="text-2xl font-bold">Amazon</div>
-            <div className="text-2xl font-bold">Apple</div>
-          </div>
-        </div>
       </div>
     </section>
   );

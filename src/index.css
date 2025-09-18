@@ -7,8 +7,8 @@
 @layer base {
   :root {
     /* Metabee Brand Colors */
-    --brand-primary: 45 100% 65%;       /* Amarelo mais vibrante e saturado */
-    --brand-background: 45 8% 18%;      /* Fundo muito mais escuro */
+    --brand-primary: 45 100% 50%;       /* Amarelo mais vibrante e saturado */
+    --brand-background: 45 8% 5%;      /* Fundo muito mais escuro */
     --brand-secondary: 267 100% 25%;    /* #340068 - Purple accent mais claro */
     --brand-text-light: 240 100% 99%;   /* #fefeff - Light text */
     --brand-text-dark: 0 0% 0%;         /* #000000 - Dark text */
