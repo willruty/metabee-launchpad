@@ -2,41 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* MetaStation Design System - Modern, Tech-Focused Landing Page */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    /* MetaStation Brand Colors */
+    --brand-primary: 42 89% 59%;        /* #f7b538 - Golden accent */
+    --brand-background: 55 7% 26%;      /* #353531 - Dark background */
+    --brand-secondary: 267 100% 20%;    /* #340068 - Purple accent */
+    --brand-text-light: 240 100% 99%;   /* #fefeff - Light text */
+    --brand-text-dark: 0 0% 0%;         /* #000000 - Dark text */
+    
+    /* Semantic Design Tokens */
+    --background: var(--brand-background);
+    --foreground: var(--brand-text-light);
+    
+    --card: 55 9% 30%;                  /* Slightly lighter than background */
+    --card-foreground: var(--brand-text-light);
+    
+    --popover: var(--brand-background);
+    --popover-foreground: var(--brand-text-light);
+    
+    --primary: var(--brand-primary);
+    --primary-foreground: var(--brand-text-dark);
+    
+    --secondary: var(--brand-secondary);
+    --secondary-foreground: var(--brand-text-light);
+    
+    --muted: 55 7% 20%;
+    --muted-foreground: 240 5% 70%;
+    
+    --accent: var(--brand-primary);
+    --accent-foreground: var(--brand-text-dark);
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: var(--brand-text-light);
+    
+    --border: 55 7% 40%;
+    --input: 55 7% 35%;
+    --ring: var(--brand-primary);
+    
+    --radius: 1rem;
+    
+    /* Custom Design Tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--brand-primary)), hsl(267 100% 35%));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(55 9% 35%));
+    --shadow-elegant: 0 10px 30px -5px hsl(0 0% 0% / 0.3);
+    --shadow-glow: 0 0 30px hsl(var(--brand-primary) / 0.3);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +113,33 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+/* MetaStation Component Styles */
+@layer components {
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+  
+  .card-gradient {
+    background: var(--gradient-card);
+  }
+  
+  .glow-effect {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .smooth-transition {
+    transition: var(--transition-smooth);
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-width {
+    @apply max-w-7xl mx-auto;
   }
 }
