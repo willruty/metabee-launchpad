@@ -14,12 +14,12 @@ const HeroSection = () => {
               <span className="text-primary block">
                 Futuro Digital
               </span>
-              com MetaStation
+              com a Metabee
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               A plataforma completa para dominar as tecnologias do futuro. 
-              Cursos práticos, projetos reais e mentoria especializada para 
-              acelerar sua carreira na era digital.
+              Cursos práticos online + nossa revolucionária plataforma desktop 
+              MetaStation com simulador integrado para acelerar sua carreira na era digital.
             </p>
             
             {/* CTA Buttons */}
@@ -61,11 +61,11 @@ const HeroSection = () => {
           {/* Image */}
           <div className="relative animate-scale-in">
             <div className="relative z-10">
-              <img
-                src={heroImage}
-                alt="MetaStation - Plataforma de Cursos Digitais"
-                className="rounded-2xl shadow-2xl w-full h-auto"
-              />
+                <img
+                  src={heroImage}
+                  alt="Metabee - Plataforma de Cursos Digitais com MetaStation Desktop"
+                  className="rounded-2xl shadow-2xl w-full h-auto"
+                />
             </div>
             {/* Glow Effect */}
             <div className="absolute -inset-4 hero-gradient opacity-20 rounded-3xl blur-xl animate-glow"></div>

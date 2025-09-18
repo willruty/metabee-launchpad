@@ -7,7 +7,7 @@ import { CheckCircle, Download, Play, Users, Mail, Calendar } from "lucide-react
 
 const Success = () => {
   const purchaseData = {
-    orderNumber: "MS-2024-001234",
+    orderNumber: "MB-2024-001234",
     courseName: "Desenvolvimento Web Moderno",
     purchaseDate: "15 de Janeiro, 2024",
     amount: "R$ 497,00",
@@ -59,7 +59,7 @@ const Success = () => {
               Sua compra foi realizada com sucesso!
             </p>
             <Badge className="bg-primary text-primary-foreground px-4 py-2 text-sm">
-              Bem-vindo à MetaStation
+              Bem-vindo à Metabee
             </Badge>
           </div>
 
@@ -158,8 +158,8 @@ const Success = () => {
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                 <p className="text-sm">
-                  <strong>Acesso vitalício:</strong> Você terá acesso ao curso para sempre, 
-                  incluindo todas as atualizações futuras.
+                  <strong>Acesso vitalício:</strong> Você terá acesso aos cursos online e 
+                  à plataforma MetaStation desktop para sempre, incluindo todas as atualizações futuras.
                 </p>
               </div>
               <div className="flex items-start gap-3">
@@ -208,7 +208,7 @@ const Success = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                   <Mail className="mr-2 h-4 w-4" />
-                  suporte@metastation.com.br
+                  suporte@metabee.com.br
                 </Button>
                 <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                   <Users className="mr-2 h-4 w-4" />

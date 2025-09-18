@@ -44,15 +44,16 @@ const ContactSection = () => {
     <section id="contact" className="section-padding bg-card/30">
       <div className="container-width">
         {/* Header */}
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Vamos <span className="text-primary">Conversar</span>?
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Tem dúvidas sobre nossos cursos? Quer uma consultoria personalizada? 
-            Entre em contato conosco e descubra como podemos acelerar sua carreira.
-          </p>
-        </div>
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              Vamos <span className="text-primary">Conversar</span>?
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Tem dúvidas sobre nossos cursos ou sobre a plataforma MetaStation? 
+              Quer uma consultoria personalizada? Entre em contato conosco e 
+              descubra como podemos acelerar sua carreira.
+            </p>
+          </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
@@ -143,7 +144,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg">E-mail</h3>
-                    <p className="text-primary">contato@metastation.com.br</p>
+                    <p className="text-primary">contato@metabee.com.br</p>
                   </div>
                 </div>
                 <p className="text-muted-foreground text-sm">

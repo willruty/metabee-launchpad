@@ -29,8 +29,8 @@ const FeaturesSection = () => {
     },
     {
       icon: Smartphone,
-      title: "Multiplataforma",
-      description: "Acesse de qualquer dispositivo: celular, tablet, computador ou smart TV."
+      title: "MetaStation Desktop",
+      description: "Plataforma desktop exclusiva com simulador integrado para prática em ambiente real."
     },
     {
       icon: Users,
@@ -59,13 +59,14 @@ const FeaturesSection = () => {
       <div className="container-width">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            O que nos torna <span className="text-primary">Únicos</span>
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Combinamos tecnologia de ponta com metodologia comprovada para 
-            oferecer a melhor experiência de aprendizado digital do mercado.
-          </p>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              O que nos torna <span className="text-primary">Únicos</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Combinamos cursos online de alta qualidade com nossa revolucionária 
+              plataforma desktop MetaStation, que possui simulador integrado para 
+              oferecer a melhor experiência de aprendizado prático do mercado.
+            </p>
         </div>
 
         {/* Features Grid */}
@@ -92,13 +93,13 @@ const FeaturesSection = () => {
 
         {/* Bottom CTA */}
         <div className="mt-20 text-center bg-gradient-to-r from-primary/10 to-secondary/10 rounded-3xl p-12 border border-primary/20">
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">
-            Pronto para <span className="text-primary">Transformar</span> sua Carreira?
-          </h3>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Junte-se a milhares de profissionais que já mudaram de vida com nossos cursos. 
-            Comece hoje mesmo sua jornada no mundo tech!
-          </p>
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+              Pronto para <span className="text-primary">Transformar</span> sua Carreira?
+            </h3>
+            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+              Junte-se a milhares de profissionais que já mudaram de vida com nossos cursos online 
+              e nossa plataforma desktop MetaStation. Comece hoje mesmo sua jornada no mundo tech!
+            </p>
           
           {/* Success indicators */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
@@ -128,7 +129,7 @@ const FeaturesSection = () => {
               </div>
               <h4 className="font-bold text-lg mb-2">Método Exclusivo</h4>
               <p className="text-muted-foreground text-sm">
-                Aprenda 70% mais rápido com nossa metodologia prática
+                Aprenda 70% mais rápido com cursos online + MetaStation desktop
               </p>
             </div>
           </div>

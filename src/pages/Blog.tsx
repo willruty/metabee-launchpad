@@ -85,12 +85,13 @@ const Blog = () => {
       <section className="section-padding pt-24">
         <div className="container-width">
           <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Blog <span className="text-primary">MetaStation</span>
+            <h1 className="text-4xl md:text-5xl font-bold mb-2">
+              Blog <span className="text-primary">Metabee</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Insights, tutoriais e tendências do mundo tech. 
-              Conteúdo exclusivo dos nossos especialistas para acelerar seu aprendizado.
+              Conteúdo exclusivo dos nossos especialistas para acelerar seu aprendizado 
+              com nossa plataforma online e MetaStation desktop.
             </p>
           </div>
 

@@ -19,7 +19,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-primary">MetaStation</h1>
+            <h1 className="text-2xl font-bold text-primary">Metabee</h1>
           </div>
 
           {/* Desktop Navigation */}

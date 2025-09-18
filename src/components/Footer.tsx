@@ -46,17 +46,18 @@ const Footer = () => {
           <div className="grid lg:grid-cols-6 gap-8">
             {/* Brand Section */}
             <div className="lg:col-span-2">
-              <h3 className="text-2xl font-bold text-primary mb-4">MetaStation</h3>
+              <h3 className="text-2xl font-bold text-primary mb-4">Metabee</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 A plataforma líder em educação digital do Brasil. 
-                Transformamos vidas através da tecnologia e do conhecimento.
+                Transformamos vidas através da tecnologia, conhecimento e 
+                nossa revolucionária plataforma desktop MetaStation.
               </p>
               
               {/* Contact Info */}
               <div className="space-y-3 text-sm">
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <Mail className="h-4 w-4 text-primary" />
-                  contato@metastation.com.br
+                  contato@metabee.com.br
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <Phone className="h-4 w-4 text-primary" />
@@ -183,7 +184,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="py-6 border-t border-border text-center text-sm text-muted-foreground">
           <p>
-            © {currentYear} MetaStation. Todos os direitos reservados. 
+            © {currentYear} Metabee. Todos os direitos reservados. 
             CNPJ: 12.345.678/0001-90
           </p>
         </div>

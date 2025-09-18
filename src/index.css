@@ -6,10 +6,10 @@
 
 @layer base {
   :root {
-    /* MetaStation Brand Colors */
-    --brand-primary: 42 89% 59%;        /* #f7b538 - Golden accent */
-    --brand-background: 55 7% 26%;      /* #353531 - Dark background */
-    --brand-secondary: 267 100% 20%;    /* #340068 - Purple accent */
+    /* Metabee Brand Colors */
+    --brand-primary: 45 100% 65%;       /* Amarelo mais vibrante e saturado */
+    --brand-background: 45 8% 18%;      /* Fundo muito mais escuro */
+    --brand-secondary: 267 100% 25%;    /* #340068 - Purple accent mais claro */
     --brand-text-light: 240 100% 99%;   /* #fefeff - Light text */
     --brand-text-dark: 0 0% 0%;         /* #000000 - Dark text */
     
@@ -17,7 +17,7 @@
     --background: var(--brand-background);
     --foreground: var(--brand-text-light);
     
-    --card: 55 9% 30%;                  /* Slightly lighter than background */
+    --card: 45 10% 22%;                 /* Card mais escura */
     --card-foreground: var(--brand-text-light);
     
     --popover: var(--brand-background);
@@ -29,8 +29,8 @@
     --secondary: var(--brand-secondary);
     --secondary-foreground: var(--brand-text-light);
     
-    --muted: 55 7% 20%;
-    --muted-foreground: 240 5% 70%;
+    --muted: 45 8% 15%;
+    --muted-foreground: 240 5% 75%;
     
     --accent: var(--brand-primary);
     --accent-foreground: var(--brand-text-dark);
@@ -38,15 +38,15 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: var(--brand-text-light);
     
-    --border: 55 7% 40%;
-    --input: 55 7% 35%;
+    --border: 45 8% 35%;
+    --input: 45 8% 25%;
     --ring: var(--brand-primary);
     
     --radius: 1rem;
     
     /* Custom Design Tokens */
     --gradient-hero: linear-gradient(135deg, hsl(var(--brand-primary)), hsl(267 100% 35%));
-    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(55 9% 35%));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(45 10% 28%));
     --shadow-elegant: 0 10px 30px -5px hsl(0 0% 0% / 0.3);
     --shadow-glow: 0 0 30px hsl(var(--brand-primary) / 0.3);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

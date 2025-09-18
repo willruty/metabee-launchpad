@@ -78,13 +78,14 @@ const CoursesSection = () => {
       <div className="container-width">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Cursos que <span className="text-primary">Transformam</span> Carreiras
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Metodologia prática com projetos reais. Aprenda com especialistas 
-            e construa um portfólio que impressiona recrutadores.
-          </p>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              Cursos que <span className="text-primary">Transformam</span> Carreiras
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Metodologia prática com projetos reais. Aprenda com especialistas da Metabee 
+              e construa um portfólio que impressiona recrutadores usando nossa plataforma 
+              online + MetaStation desktop.
+            </p>
         </div>
 
         {/* Courses Grid */}

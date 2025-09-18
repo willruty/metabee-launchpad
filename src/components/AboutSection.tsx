@@ -32,18 +32,20 @@ const AboutSection = () => {
           {/* Content */}
           <div className="animate-fade-in">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              Sobre a <span className="text-primary">MetaStation</span>
+              Sobre a <span className="text-primary">Metabee</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Fundada em 2020 por especialistas em tecnologia e educação, a MetaStation 
+              Fundada em 2020 por especialistas em tecnologia e educação, a Metabee 
               nasceu com o propósito de revolucionar o ensino digital no Brasil. 
-              Nossa plataforma combina metodologias modernas de aprendizado com as 
-              tecnologias mais demandadas pelo mercado.
+              Nossa plataforma combina cursos online de alta qualidade com nossa 
+              exclusiva plataforma desktop MetaStation, equipada com simulador integrado 
+              para prática em ambiente real.
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               Com mais de 5000 estudantes formados e uma taxa de empregabilidade de 
               85% em até 6 meses, somos reconhecidos por grandes empresas como Google, 
-              Microsoft e Meta como parceiros oficiais de educação.
+              Microsoft e Meta como parceiros oficiais de educação. Nossa MetaStation 
+              oferece um ambiente de desenvolvimento completo para você praticar sem limites.
             </p>
             
             {/* Stats */}
@@ -88,14 +90,15 @@ const AboutSection = () => {
         </div>
 
         {/* Team Section */}
-        <div className="mt-24 text-center">
-          <h3 className="text-2xl md:text-3xl font-bold mb-8">
-            Nossa <span className="text-primary">Equipe</span>
-          </h3>
-          <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
-            Profissionais experientes de grandes empresas como Google, Microsoft, 
-            Amazon e startups unicórnio, unidos pela paixão de ensinar e transformar vidas.
-          </p>
+          <div className="mt-24 text-center">
+            <h3 className="text-2xl md:text-3xl font-bold mb-8">
+              Nossa <span className="text-primary">Equipe</span>
+            </h3>
+            <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
+              Profissionais experientes de grandes empresas como Google, Microsoft, 
+              Amazon e startups unicórnio, unidos pela paixão de ensinar e transformar vidas 
+              através da nossa plataforma online e da MetaStation desktop.
+            </p>
           
           {/* Team certifications */}
           <div className="flex flex-wrap justify-center gap-8 opacity-60">
