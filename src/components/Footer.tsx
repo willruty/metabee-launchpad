@@ -6,10 +6,8 @@ const Footer = () => {
 
   const footerLinks = {
     company: [
-      { name: "Sobre Nós", href: "#about" },
-      { name: "Equipe", href: "#about" },
-      { name: "Carreiras", href: "/careers" },
-      { name: "Imprensa", href: "/press" }
+      { name: "Sobre Nós", href: "/#about" },
+      { name: "Equipe", href: "/#about" },
     ],
     courses: [
       { name: "Todos os Cursos", href: "#courses" },
@@ -23,12 +21,6 @@ const Footer = () => {
       { name: "WhatsApp", href: "https://wa.me/5511999999999" },
       { name: "FAQ", href: "/faq" }
     ],
-    legal: [
-      { name: "Política de Privacidade", href: "/privacy" },
-      { name: "Termos de Uso", href: "/terms" },
-      { name: "Política de Reembolso", href: "/refund" },
-      { name: "Cookies", href: "/cookies" }
-    ]
   };
 
   const socialLinks = [
@@ -129,22 +121,6 @@ const Footer = () => {
               <h4 className="font-bold text-foreground mb-4">Suporte</h4>
               <ul className="space-y-2">
                 {footerLinks.support.map((link) => (
-                  <li key={link.name}>
-                    <a 
-                      href={link.href}
-                      className="text-muted-foreground hover:text-primary text-sm smooth-transition"
-                    >
-                      {link.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold text-foreground mb-4">Legal</h4>
-              <ul className="space-y-2">
-                {footerLinks.legal.map((link) => (
                   <li key={link.name}>
                     <a 
                       href={link.href}

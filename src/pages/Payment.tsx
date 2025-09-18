@@ -35,15 +35,15 @@ const Payment = () => {
 
   const handlePayment = async () => {
     setIsProcessing(true);
-    
+
     // Simulate payment processing
     await new Promise(resolve => setTimeout(resolve, 3000));
-    
+
     toast({
       title: "Pagamento processado com sucesso!",
       description: "Redirecionando para página de confirmação...",
     });
-    
+
     // Redirect to success page
     setTimeout(() => {
       window.location.href = "/success";
@@ -53,14 +53,16 @@ const Payment = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       <section className="section-padding pt-24">
         <div className="container-width max-w-6xl">
           {/* Header */}
           <div className="mb-8">
-            <Button variant="ghost" className="mb-4 text-primary hover:text-primary/80">
+            <Button variant="outline" className="mb-4 text-primary hover:text-primary/80">
               <ArrowLeft className="mr-2 h-4 w-4" />
-              Voltar aos Cursos
+              <a href="/">
+                Voltar
+              </a>
             </Button>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Finalizar Compra</h1>
             <p className="text-muted-foreground">Complete sua inscrição e comece a transformar sua carreira hoje mesmo</p>
@@ -121,16 +123,16 @@ const Payment = () => {
                   <CardContent className="space-y-4">
                     <div>
                       <Label htmlFor="cardName">Nome no Cartão</Label>
-                      <Input 
-                        id="cardName" 
+                      <Input
+                        id="cardName"
                         placeholder="Nome como está no cartão"
                         className="bg-background/50 border-border focus:border-primary"
                       />
                     </div>
                     <div>
                       <Label htmlFor="cardNumber">Número do Cartão</Label>
-                      <Input 
-                        id="cardNumber" 
+                      <Input
+                        id="cardNumber"
                         placeholder="1234 5678 9012 3456"
                         className="bg-background/50 border-border focus:border-primary"
                       />
@@ -138,22 +140,22 @@ const Payment = () => {
                     <div className="grid grid-cols-2 gap-4">
                       <div>
                         <Label htmlFor="expiry">Validade</Label>
-                        <Input 
-                          id="expiry" 
+                        <Input
+                          id="expiry"
                           placeholder="MM/AA"
                           className="bg-background/50 border-border focus:border-primary"
                         />
                       </div>
                       <div>
                         <Label htmlFor="cvv">CVV</Label>
-                        <Input 
-                          id="cvv" 
+                        <Input
+                          id="cvv"
                           placeholder="123"
                           className="bg-background/50 border-border focus:border-primary"
                         />
                       </div>
                     </div>
-                    
+
                     {/* Installments */}
                     <div>
                       <Label>Parcelamento</Label>
@@ -197,16 +199,16 @@ const Payment = () => {
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="firstName">Nome</Label>
-                      <Input 
-                        id="firstName" 
+                      <Input
+                        id="firstName"
                         placeholder="Seu nome"
                         className="bg-background/50 border-border focus:border-primary"
                       />
                     </div>
                     <div>
                       <Label htmlFor="lastName">Sobrenome</Label>
-                      <Input 
-                        id="lastName" 
+                      <Input
+                        id="lastName"
                         placeholder="Seu sobrenome"
                         className="bg-background/50 border-border focus:border-primary"
                       />
@@ -214,17 +216,17 @@ const Payment = () => {
                   </div>
                   <div>
                     <Label htmlFor="email">E-mail</Label>
-                    <Input 
-                      id="email" 
-                      type="email" 
+                    <Input
+                      id="email"
+                      type="email"
                       placeholder="seu@email.com"
                       className="bg-background/50 border-border focus:border-primary"
                     />
                   </div>
                   <div>
                     <Label htmlFor="cpf">CPF</Label>
-                    <Input 
-                      id="cpf" 
+                    <Input
+                      id="cpf"
                       placeholder="000.000.000-00"
                       className="bg-background/50 border-border focus:border-primary"
                     />
@@ -259,7 +261,7 @@ const Payment = () => {
                   <div>
                     <h3 className="font-bold text-lg mb-2">{courseData.title}</h3>
                     <p className="text-muted-foreground text-sm mb-4">{courseData.description}</p>
-                    
+
                     <div className="space-y-2 text-sm">
                       {courseData.features.map((feature, index) => (
                         <div key={index} className="flex items-center gap-2">
@@ -290,7 +292,7 @@ const Payment = () => {
                   </div>
 
                   {/* Payment Button */}
-                  <Button 
+                  <Button
                     onClick={handlePayment}
                     disabled={isProcessing}
                     className="w-full bg-primary text-primary-foreground hover:bg-primary/90 glow-effect"
@@ -313,7 +315,7 @@ const Payment = () => {
                   <Shield className="h-8 w-8 text-primary mx-auto mb-3" />
                   <h4 className="font-bold mb-2">Garantia de 30 Dias</h4>
                   <p className="text-sm text-muted-foreground">
-                    Se não ficar satisfeito, devolvemos 100% do seu dinheiro. 
+                    Se não ficar satisfeito, devolvemos 100% do seu dinheiro.
                     Sem perguntas, sem complicações.
                   </p>
                 </CardContent>

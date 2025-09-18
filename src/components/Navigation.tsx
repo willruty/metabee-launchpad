@@ -6,15 +6,15 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Início", href: "#home" },
-    { name: "Cursos", href: "#courses" },
-    { name: "Preços", href: "#pricing" },
-    { name: "Sobre", href: "#about" },
+    { name: "Início", href: "/" },
+    { name: "Cursos", href: "/#courses" },
+    { name: "Preços", href: "/#pricing" },
+    { name: "Sobre", href: "/#about" },
     { name: "Blog", href: "/blog" },
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-md border-b border-border">
+    <nav className="fixed top-0 w-full z-50 bg-background/60 backdrop-blur-md">
       <div className="container-width">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -40,7 +40,9 @@ const Navigation = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90 glow-effect">
-              Começar Agora
+              <a href="/payment">
+                Começar Agora
+              </a>
             </Button>
           </div>
 
